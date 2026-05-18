@@ -17,10 +17,25 @@ All activated inputs represents the number 9.
 
 ## How to test
 
-When the DIP switch for the inputs on the TinyTapeout Demo Board is used. The value of the DIP Switch input should be shown on the 7 segment display.
+When the DIP switch for the inputs on the TinyTapeout Demo Board is used. The label of the DIP Switch input should be shown on the 7 segment display.
+The label of the DIP switch is input number+1. e.g. in0 = DIP switch label 1
+
 e.g. active input in3 should show the number 4 on the 7 segment display.
 e.g. non active input should show the number 0 on the 7 segment display.
 e.g. all active inputs should show the number 9 on the 7 segment display.
+
+| input in0 ... in7 | output out0 ... out6 |
+|-------------------|----------------------|
+| 0 0 0 0 0 0 0 0   | 1 1 1 1 1 1 0        |
+| 1 0 0 0 0 0 0 0   | 0 1 1 0 0 0 0        |
+| 0 1 0 0 0 0 0 0   | 1 1 0 1 1 0 1        |
+| 0 0 1 0 0 0 0 0   | 1 1 1 1 0 0 1        |
+| 0 0 0 1 0 0 0 0   | 0 1 1 0 0 1 1        |
+| 0 0 0 0 1 0 0 0   | 1 0 1 1 0 1 1        |
+| 0 0 0 0 0 1 0 0   | 1 0 1 1 1 1 1        |
+| 0 0 0 0 0 0 1 0   | 1 1 1 0 0 0 0        |
+| 0 0 0 0 0 0 0 1   | 1 1 1 1 1 1 1        |
+| 1 1 1 1 1 1 1 1   | 1 1 1 1 0 1 1        |
 
 ## External hardware
 
