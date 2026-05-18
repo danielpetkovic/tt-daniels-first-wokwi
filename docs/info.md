@@ -9,7 +9,8 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Only AND, OR and NOT Gates are used. 8 inputs (in0 ... in7) are used.
+Only AND, OR and NOT Gates are used.
+8 inputs (in0 ... in7) are used.
 Activated in0 input represents the number 1. Activated in1 represents the number 2 and so on ... 
 until in7 which represents the number 8.
 None activated input represents the number 0.
